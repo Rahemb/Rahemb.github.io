@@ -2,12 +2,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  <!-- adding a yellow border line to each h1 in evry single page for consistency and style -->
-  h1 {
-    border-bottom: 5px solid Yellow;
-  }
-  <!-- Putting the h1 in center -->
+  <!--  -->
+  h1 {border-bottom: 5px solid Yellow;}
+  <!--  -->
    h1 {text-align: center;}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: lightgray;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a.active {
+    background-color: green;
+    color: white;
+  }
+
 
 </style>
 
@@ -44,7 +61,7 @@
 <!-- Navigation Section -->
 <nav>
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
     <li><a href="accessibility.html">Accessibility</a></li>
     <li><a href="topical.html">Data1100 info</a></li>
     <li><a href="canteen.html">Canteen</a></li>
@@ -53,3 +70,4 @@
 </nav>
 </body>
 </html>
+
