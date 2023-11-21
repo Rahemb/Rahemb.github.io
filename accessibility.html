@@ -1,11 +1,46 @@
 <!-- accessibility.html -->
 <!DOCTYPE html>
 <html lang="en">
-<style> <!-- Putting the h1 in center and adding a border line to h1 -->
+<style> <!-- -->
+
+body {background-color: palegoldenrod;}
+
   h1 {text-align: center;}
   h1 {
     border-bottom: 5px solid Yellow;
   }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
+}
+
+li a.active {
+  background-color: green;
+}
 </style>
 <head>
   <meta charset="UTF-8">
@@ -18,6 +53,16 @@
 <header>
   <h1>Accessibility</h1>
 </header>
+<nav>
+  <ul>
+    <!-- Repeat the navigation bar on each page for consistency -->
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="accessibility.html">Accessibility</a></li>
+    <li><a href="topical.html">DATA1100</a></li>
+    <li><a href="canteen.html">Canteen</a></li>
+    <li><a href="library.html">Library</a></li>
+  </ul>
+</nav>
 
 
 
@@ -29,7 +74,7 @@
 </main>
 <p style="font-size:30px;">When making this website, accsessibility was a huge factor.
   Accsessibility is about making the website functional, accsessible and user friendly.
-  This website is easily accessible and easy to use & understand.</p>
+  This website is easily accessible and easy to use and understand.</p>
 
 <p style="font-size:30px;"> The codes in the program were tested using automated testing.
   Used the tool "W3C validator" to test the program.</p>
@@ -50,15 +95,6 @@
 <footer>
   <p>&copy; 2023 OsloMet Campus. All rights reserved.</p>
 </footer>
-<nav>
-  <ul>
-    <!-- Repeat the navigation bar on each page for consistency -->
-    <li><a href="index.html">Home</a></li>
-    <li><a href="accessibility.html">Accessibility</a></li>
-    <li><a href="topical.html">DATA1100</a></li>
-    <li><a href="canteen.html">Canteen</a></li>
-    <li><a href="library.html">Library</a></li>
-  </ul>
-</nav>
+
 </body>
 </html>
