@@ -2,25 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
+    p {
+        width: 800px;
+    }
     body {background-color: palegoldenrod;}
 
 
     h1 {text-align: center;}
-    h1 {
-        border-bottom: 5px solid Yellow;
-    }
+
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
+        background-color: white;
     }
 
     li {
         float: left;
-        border-right:1px solid #bbb;
+        border-right:1px solid white;
     }
 
     li:last-child {
@@ -29,18 +34,18 @@
 
     li a {
         display: block;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
 
     li a:hover:not(.active) {
-        background-color: black;
+        background-color: yellow;
     }
 
     li a.active {
-        background-color: green;
+        background-color: yellow;
     }
 </style>
 
@@ -67,10 +72,13 @@
 <h2>The University Library consists of four libraries,
     a Learning Support Centre,
     AV services and research support services.</h2>
+<div>
+
+</div>
 <img src="bibliotek%20bilde.png" alt="Biblioteket på p32" width="600" height="350">
 
-<h2 style="border: 2px solid Orange;">Opening hours:</h2>
-<p style="font-size:22px;">Students and employees at OsloMet have access to the libraries at campus Pilestredet and at Kjeller from 06.00–22.00.
+<h2>Opening hours:</h2>
+<p style="font-size:23px;">Students and employees at OsloMet have access to the libraries at campus Pilestredet and at Kjeller from 06.00–22.00.
     You have to use your card and code to access the libraries outside staffed hours.
     External users have access when the libraries are staffed.</p> <!-- Picture and text from https://www.oslomet.no/en/ul -->
 <p><a href="https://www.oslomet.no/en/ul">Visit oslomet for more info about the  libraries</a></p> <!-- adding a link to the official oslomet website -->
