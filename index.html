@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+
+  body {background-color: palegoldenrod;}
   <!--  -->
   h1 {border-bottom: 5px solid Yellow;}
   <!--  -->
@@ -10,19 +12,33 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: lightgray;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+    border-right:1px solid white;
+  }
+
+  li:last-child {
+    border-right: none;
   }
 
   li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
   }
+
+  li a:hover:not(.active) {
+    background-color: black;
+  }
+
   li a.active {
     background-color: green;
-    color: white;
   }
 
 
@@ -35,9 +51,20 @@
 
 <body>
 
+
 <!-- Header Section -->
 <header>
   <h1>Welcome to OsloMet Campus</h1>
+
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="topical.html">Data1100 info</a></li>
+      <li><a href="canteen.html">Canteen</a></li>
+      <li><a href="library.html">Library</a></li>
+    </ul>
+  </nav>
   <img src="OsloMet%20img.jpeg" alt="OsloMet Campus" width="1430" height="450">
 </header>
 
@@ -59,15 +86,7 @@
   <p>&copy; 2023 OsloMet Campus. All rights reserved.</p>
 </footer>
 <!-- Navigation Section -->
-<nav>
-  <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="accessibility.html">Accessibility</a></li>
-    <li><a href="topical.html">Data1100 info</a></li>
-    <li><a href="canteen.html">Canteen</a></li>
-    <li><a href="library.html">Library</a></li>
-  </ul>
-</nav>
+
 </body>
 </html>
 
